@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdint.h>      // Defines standard integer types~
-
+#include <stdint.h>      // Defines standard integer types
 
 void packet_handler(unsigned char *args, const struct pcap_pkthdr *header, const unsigned char *packet) {
     printf("Packet captured - Length: %d bytes\n", header->len);
